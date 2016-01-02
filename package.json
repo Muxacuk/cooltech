@@ -1,0 +1,12 @@
+{
+  "name": "ls2",
+  "version": "1.0.0",
+  "devDependencies": {
+    "browser-sync": "^2.10.1",
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "uglify": "^0.1.5"
+  }
+}
