@@ -1,0 +1,16 @@
+.products__block__header
+	.header__left
+		span Сортировать по
+		.sort-by__layout 
+			span по цене
+			- var sort = ['по цене','по популярности']
+			ul.sort-by__list
+				each item in sort
+					li.sort-by__item #{item}
+	.header__right
+		span.layout__titile Вид каталога
+		- var layout_list = ['list__big','tile','list__small']
+		ul.layout__list.closed
+			each layout,index in layout_list
+				li.layout__item
+					a( href="#" class="layout__button #{layout}-btn " + ((index == 1)? 'layout__button__active':"") data-layout="#{layout}" id="#{layout}") #{layout}

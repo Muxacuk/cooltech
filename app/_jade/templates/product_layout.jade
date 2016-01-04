@@ -1,0 +1,34 @@
+.products__item__inner
+	.products__left
+		.products__slideshow
+			a(href="#").products__slideshow-display
+				img(src="img/samsung1.png", alt="product foto").prouducts__big-photo
+			ul.products__slideshow-thombs
+				- for(var j = 1; j < 4; j++)
+					li.products_slideshow-item
+						a(href="#").products_slideshow-item__inner
+							img(src="img/samsung#{j}.png", alt="small pick")
+			.products__article
+				span.products__article__word Артикул
+				span.products__article__code 123456
+		.products__desc
+			.products__desc-title Samsung GT-I9301I GALAXY S 3
+			ul.products__options
+				-var options= {"Тип SIM-карты":'Micro-SIM',"Количество SIM-карт":'1',"Цвет":'Белый',"ОС":'Android',"Связь 2G":'Есть',"4G(LTE)":'Нет',"GPS-модуль":'Есть'}
+				each val,option in options
+					li.products__option
+						span.option__name #{option}
+						span.option__value #{val}
+			span.products_short__desc 
+				| Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... 
+			.products__rating
+				ul.products__rating-stars
+					- for(var j = 0; j < 5; j++)
+						li(class="" + ((j<4)? "products__rating__star-red":"")).products__rating__star
+				span.product__rating-number 4
+	.product__right
+		.product__info
+			.product__price 11 290
+		.product__right__buttom
+			a(href="#").product__buy-button В корзину
+			.have__in__stock__message В наличии

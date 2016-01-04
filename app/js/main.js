@@ -85,5 +85,13 @@ reset.init();
 			$($(this).closest('.products__slideshow')[0]).find('.products__slideshow-display img')[0].src=$(this).find('img')[0].src;
 			event.preventDefault();
 		});
-})();
+		$('.categoriies__link').on('click',function () {
+			$(this)
+				.addClass('active')
+				.parent().siblings()
+				.find('.categoriies__link')
+				.removeClass('active');
+			event.preventDefault();
+			return false;
+		});
 $('.info__block .container').columnize({ width: 530 });

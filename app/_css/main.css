@@ -2007,17 +2007,35 @@ body .ui-tooltip {
 
 .socials__item__fb .social_icon {
   background-image: url(../pictures/spritesocials.png);
-  background-position: 0px -32px;
+  background-position: -72px -32px;
+  width: 6px;
+  height: 12px; }
+
+.socials__item__fb:hover .social_icon {
+  background-image: url(../pictures/spritesocials.png);
+  background-position: -72px 0px;
   width: 6px;
   height: 12px; }
 
 .socials__item__vk .social_icon {
   background-image: url(../pictures/spritesocials.png);
-  background-position: -36px 0px;
+  background-position: -30px -32px;
+  width: 10px;
+  height: 12px; }
+
+.socials__item__vk:hover .social_icon {
+  background-image: url(../pictures/spritesocials.png);
+  background-position: 0px -32px;
   width: 10px;
   height: 12px; }
 
 .socials__item__tw .social_icon {
+  background-image: url(../pictures/spritesocials.png);
+  background-position: -36px 0px;
+  width: 16px;
+  height: 12px; }
+
+.socials__item__tw:hover .social_icon {
   background-image: url(../pictures/spritesocials.png);
   background-position: 0px 0px;
   width: 16px;
@@ -2853,7 +2871,8 @@ body .ui-tooltip {
 .footer__nav {
   background: transparent;
   margin-top: 30px;
-  float: right; }
+  float: right;
+  border-bottom: none; }
   .footer__nav .nav__list {
     text-align: right; }
   .footer__nav .nav__item {

@@ -38,11 +38,16 @@
 }
 
 $socials: ('fb','vk','tw');
-$socials_icon: ($fb,$vk,$tw);
+$socials_icon: ($fb,$vk,$tw,$fb-hover,$vk-hover,$tw-hover);
 @for $i from 1 through 3{
 	.socials__item__#{nth($socials, $i)}{
 		.social_icon{
 			@include sprite(nth($socials_icon, $i));
+		}
+		&:hover{
+			.social_icon{
+				@include sprite(nth($socials_icon, $i+3));
+			}
 		}
 	}
 }

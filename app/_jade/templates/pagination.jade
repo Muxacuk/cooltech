@@ -1,0 +1,9 @@
+.pagination
+	ul.page__list
+		li.page__item 
+			a(href="#" id="page__prev").pagination__link  &#60;
+		- for(var i = 1; i < 4;i++)
+			li.page__item 
+				a(href="#").pagination__link= i
+		li.page__item 
+			a(href="#" id="page__next").pagination__link &#62;

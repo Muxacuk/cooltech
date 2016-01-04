@@ -1,0 +1,8 @@
+.products__block
+	include products_block_header
+
+	ul.products__list.tile
+		- for(var i = 0; i < 9; i++)
+			li.products__item
+				include product_layout
+	include pagination

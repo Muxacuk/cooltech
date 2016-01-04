@@ -1,0 +1,7 @@
+- var items = ['fb','vk','tw']
+.socials.header-socials
+	ul.socials__list
+		each item in items
+			li(class="socials__item socials__item__#{item}")
+				a(href="#" target="_blank").social__link
+					.social_icon

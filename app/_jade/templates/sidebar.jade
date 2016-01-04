@@ -1,0 +1,71 @@
+aside.sidebar
+	section.sidebar__section.categories
+		- var list = ['Флагманы','Бюджетная линейка']
+		ul.categories__list
+			each li in list 
+				li.categories__item
+					a(href="#" class=""+ ((li === 'Бюджетная линейка')? "active":"")).categoriies__link #{li}
+	section.sidebar__section.filter
+		ul.filter__list
+
+			li.filter__item
+				a(href="#").filter__item__title Наличие в магазинах
+				.filter__item__body
+					ul.filter__sublist
+						li.sublist__item
+							label.filter__label.radio__label
+								input(type="radio" name="have_in_shop" checked)
+								span во всех магазинах
+						li.sublist__item
+							label.filter__label.radio__label
+								input(type="radio" name="have_in_shop")
+								span В ближайшем ко мне магазине
+
+			li.filter__item
+				a(href="#").filter__item__title Бренды
+				.filter__item__body
+					ul.filter__sublist
+						- var brands = ['Lenovo','Apple','Samsung','Asus','Motorola']
+						each brand in brands 
+							li.sublist__item
+								label.filter__label.checkbox__label
+									input(type="checkbox" name="#{brand}")
+									span #{brand}
+					a(href="#").reset Сбросить фильтр
+
+			li.filter__item
+				a(href="#").filter__item__title Цена
+				.filter__item__body
+
+							label.cost__label от    
+								input(type="text").for
+
+							label.cost__label до   
+								input(type="text").to
+
+					div(data-min="500" data-max="5000").cost__slider
+
+
+			li.filter__item
+				a(href="#").filter__item__title Цвет
+				.filter__item__body
+					-var colors = ['ffffff','cccccc','000000','0a3153','ff1800','fff343','fb914a','92c37c','40a6ff','9870ad','dc78ad','7f401d']
+					ul.filter__sublist.filter__color__list
+
+						each color in colors
+							li.color__item.sublist__item
+								label.color__label
+									input(type="checkbox" name="color" value="#{color}")
+									div(style="background:##{color};").color__pic
+
+			li.filter__item
+				a(href="#").filter__item__title Операционные системы
+				.filter__item__body
+					ul.filter__sublist
+						- var OSs = ['Android','iOS','Windows Mobile','Symbian','custom']
+						each os in OSs 
+							li.sublist__item
+								label.filter__label.checkbox__label
+									input(type="checkbox" name="#{os}")
+									span #{os}
+						a(href="#").reset Сбросить фильтр
