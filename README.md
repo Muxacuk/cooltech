@@ -1,4 +1,5 @@
->>>>Instuctions to set this app
+Instuctions to set this app
+===========================
 
 1.git clone https://github.com/Muxacuk/cooltech site
 2.cd site
