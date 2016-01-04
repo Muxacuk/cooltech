@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "authors": [
+    "Muxacuk <m-izmaylov@inbox.ru>"
+  ],
+  "dependencies": {
+    "jquery": "1.8.3",
+    "normalize-css": "normalize.css#~3.0.3",
+    "jquery-placeholder": "~2.3.1",
+    "modernizr": "~3.2.0"
+  }
+}

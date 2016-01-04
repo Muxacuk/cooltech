@@ -1,0 +1,17 @@
+.ui-slider-horizontal{
+	height: 3px;
+	width: 273px;
+	margin: 0px auto 20px;
+}
+.ui-slider-range{
+	background: $orange;
+}
+.ui-slider-handle.ui-state-default.ui-corner-all{
+	border: none;
+	@include sprite($cost-extr);
+	position: absolute;
+	top: 4px;
+	outline: none !important;
+	margin-left: -4px;
+	cursor: pointer;
+}

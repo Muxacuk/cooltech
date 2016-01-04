@@ -1,0 +1,54 @@
+.list__small{
+	.products__slideshow-display,.products__slideshow-thombs,.products_short__desc,.products__rating {
+		display: none;
+	}
+	.products__item{
+		padding: 13px 12px 13px;
+		&:hover{
+			z-index: 10;
+			box-shadow: 0 0 3px 3px $gray; 
+			cursor: pointer;
+		}
+	}
+	.products__left{
+		border: none;
+		width: 410px;
+	}
+	.products__desc{
+		margin-left: 10px; 
+		width: auto;
+		display: inline-block;
+	}
+	.products__desc-title{
+		font-family: $reg;
+		font-size: 14px;
+		padding-top: 2px;
+		white-space: nowrap; 
+	    overflow: hidden;  
+	    text-overflow: ellipsis;
+	    max-width: 290px;
+	}
+	.product__price{
+		font-size: 16px;
+		&:before{
+			width: 5px;
+			height: 1px;
+			position: absolute;
+			right: 5px;
+			top: 14px;
+		}
+	}
+	.product__right{
+		margin-right: 232px;
+	}
+	.have__in__stock__message{
+		position: absolute;
+		top: -8px;
+		left: -90px;
+	}
+	.product__right__buttom{
+		bottom: 50%;
+		right: 14px;
+		transform:  translateY(50%);
+	}
+}

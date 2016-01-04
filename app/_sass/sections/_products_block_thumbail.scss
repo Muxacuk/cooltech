@@ -1,0 +1,85 @@
+.tile{
+	border: none;
+	margin-left: -15px;
+	text-align: center;
+	margin-top: 0px;
+	.products__item{
+		border: 1px solid $gray;
+		width: 235px;
+		border-radius: 5px;
+		padding: 20px 12px;
+		padding-bottom: 55px;
+		overflow: hidden;
+		display: inline-block;
+		margin: 20px 0 0 14px;
+		&:hover{
+			box-shadow: 0 0 0px 1px $gray;
+		}
+	}
+	.products__left{
+		border: none;
+	}
+	.products__left{
+		float: none;
+		margin: auto;
+	}
+	.products__slideshow{
+		float: none;
+		margin: auto;
+	}
+	.products__slideshow-display{
+		margin: auto;
+	}
+	.products__article{
+		display: none;
+	}
+	.products__desc-title{
+		font-size: 14px;
+	}
+	.products__desc{
+		margin-top: 8px;
+		text-align: center;
+		margin-left: 0px;
+		float: none;
+	}
+	.products__options{
+		margin-top: 5px;
+		display: inline-block;
+		list-style: none;
+		padding: 0px;
+		width: 100%;
+		text-align: left;
+	}
+	.products__option{
+		padding: 1px 3px;
+		&:nth-child(2n-1){
+			background: #e6e6e6;
+		}
+	}
+	.option__value{
+		float: right;
+	}
+	.products__rating{
+		margin-top: 5px;
+	}
+	.product__right{
+		float: none;
+		margin: auto;
+	}
+	.products_short__desc{
+		display: none;
+	}
+	.have__in__stock__message{
+		position: absolute;
+		top: -8px;
+		left: -90px;
+	}
+	.product__price{
+		margin-top: 5px;
+		display: inline-block;
+	}
+	.product__right__buttom{
+		right: 12px;
+		bottom: 25px;
+	}
+}
