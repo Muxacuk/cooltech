@@ -2,11 +2,13 @@
   "name": "ls2",
   "version": "1.0.0",
   "devDependencies": {
+    "bower": "^1.7.2",
     "browser-sync": "^2.10.1",
     "gulp": "^3.9.0",
-    "gulp-compass": "^2.1.0",
     "gulp-jade": "^1.1.0",
     "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.1",
+    "gulp.spritesmith": "^6.0.0",
     "uglify": "^0.1.5"
   }
 }

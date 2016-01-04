@@ -1,2 +1,24 @@
-@import "compass";
+$orange: #ff6600;
+$gray: #dee1e4;
+
+@import	"common/mixins";
+
+@import	"common/normalize";
+
+@import	"common/fonts";
+
+@import	"common/sprite_socials";
+@import	"common/sprite_contacts";
+@import	"common/sprite_misc";
+@import	"common/sprite_footer-socials";
+
+@import	"common/misc";
+
 @import "sections/header";
+@import "sections/main_navigation";
+@import "sections/breadcrumbs";
+@import "sections/sidebar";
+@import "sections/products_block_header";
+@import "sections/products_block_medium_list";
+@import "sections/paginator";
+@import "sections/footer";

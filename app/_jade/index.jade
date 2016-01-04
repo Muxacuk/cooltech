@@ -2,48 +2,50 @@ include templates/head
 body 
 	.wrap
 		header.header
-			.header-top
-				.conteiner
-					- var items = ['vk','fb','tw']
+			.header__top
+				.container
+					- var items = ['fb','vk','tw']
 					.header-left
 						.socials.header-socials
 							ul.socials__list
 								each item in items
 									li(class="socials__item socials__item__#{item}")
-										a(href="#" target="_blank").social_link=item
+										a(href="#" target="_blank").social__link
+											.social_icon
 					.header-right
 						.contacts
-							span.contact.contacts__adres my home
-							a(href="#").contact.contacts__telephone +380662665658
+							span.contacts__adres ул. Маяковская 6, офис 17
+							a(href="#").contacts__telephone +7 (921) 123-12-13
 
-			.header-bottom
-				.conteiner
+			.header__bottom
+				.container
 					a(href="#main").logo
 						img(src="img/logo.png", alt="cooltech logo").logo__img
 					.search
-						form.search-form
-							input(type="text" id="search_input").search__input
-							input(type="submit").search_submit
+						form.search__form
+							input(type="text" id="search_input" placeholder="Что будем искать").search__input
+							input(type="submit" value="Найти").search__submit
 					.menu
 						-var items = ['Карта проезда','История заказов','Корзина']
 						ul.menu__list
 							each item in items
 								li.menu__list__item 
 									a(href="#").menu_link #{item}
-					nav.nav
-						.conteiner
-							- var items = ['Плашнеты','Мобильние телефоны','Mp3 плееры','Персональние компьютеры','Ноутбуки','Аксессуары','Бытовая техника']
-							ul.nav__list
-								- each item, index in items
-									li(class= (index == 1)? "active" : " ").nav_item 
-										a(href="#").nav__link #{item}
+			nav.nav
+				.container
+					- var items = ['Плашнеты','Мобильние телефоны','Mp3 плееры','Персональние компьютеры','Ноутбуки','Аксессуары','Бытовая техника']
+					ul.nav__list
+						- each item, index in items
+							li(class= (index == 1)? "nav__item__active" : " ").nav__item 
+								a(href="#").nav__link #{item}
 
-					.breadcramps
-						- var cramps = ['Главная','Каталог']
-						ul.breadcramps__list
-							- each cramp in cramps
-								li.breadcramps__item 
-									a(href="#").breadcramps__link #{cramp}
+			.breadcrumbs
+				.container
+					- var crambs = ['Главная','Каталог']
+					ul.breadcrumbs__list
+						- each cramb in crambs
+							li.breadcrumbs__item 
+								a(href="#").breadcrumbs__link #{cramb}
 		main.page-content
 			.container
 				h2.main__title Мобильные телефоны
@@ -54,74 +56,135 @@ body
 						ul.categories__list
 							each li in list 
 								li.categories__item
-									a(href="#").categoriies__trigger__link #{li}
+									a(href="#" class=""+ ((li === 'Бюджетная линейка')? "active":"")).categoriies__link #{li}
 					section.sidebar__section.filter
 						ul.filter__list
+
 							li.filter__item
 								a(href="#").filter__item__title Наличие в магазинах
 								.filter__item__body
-									label.filter_chekbox
-										input(type="radio" name="have_in_shop")
-										span во всех магазинах
-									label.filter_chekbox
-										input(type="radio" name="have_in_shop")
-										span В ближайшем ко мне магазине
+									ul.filter__sublist
+										li.sublist__item
+											label.filter__label.radio__label
+												input(type="radio" name="have_in_shop" checked)
+												span во всех магазинах
+										li.sublist__item
+											label.filter__label.radio__label
+												input(type="radio" name="have_in_shop")
+												span В ближайшем ко мне магазине
+
 							li.filter__item
 								a(href="#").filter__item__title Бренды
 								.filter__item__body
-									- var brands = ['Lenovo','Apple','Samsung','Asus','Motorola']
-									each brand in brands 
-										label.filter_chekbox
-											input(type="checkbox" name="#{brand}")
-											span #{brand}
+									ul.filter__sublist
+										- var brands = ['Lenovo','Apple','Samsung','Asus','Motorola']
+										each brand in brands 
+											li.sublist__item
+												label.filter__label.checkbox__label
+													input(type="checkbox" name="#{brand}")
+													span #{brand}
 									a(href="#" id="reset").reset Сбросить все
+
 							li.filter__item
 								a(href="#").filter__item__title Цена
 								.filter__item__body
-									label от
-										input(type="text")
-									label до
-										input(type="text")
+
+											label.cost__label от
+												input(type="text")
+
+											label.cost__label до
+												input(type="text")
+
 									.cost__slider
 										.cost__slider__body
+
 							li.filter__item
 								a(href="#").filter__item__title Цвет
 								.filter__item__body
 									-var colors = ['ffffff','cccccc','000000','0a3153','ff1800','fff343','fb914a','92c37c','40a6ff','9870ad','dc78ad','7f401d']
-									ul.color_list
+									ul.filter__sublist.filter__color__list
+
 										each color in colors
-											li(style="background:##{color}; width:50px; height:50px; display: block").color_item
+											li.sublist__item.color__item
+												label.color__label
+													input(type="radio" name="color" value="#{color}")
+													div(style="background:##{color};").color__pic
+
 							li.filter__item
 								a(href="#").filter__item__title Бренды
 								.filter__item__body
-									- var OSs = ['Android','iOS','Windows Mobile','Symbian','custom']
-									each os in OSs 
-										label.filter_chekbox
-											input(type="checkbox" name="#{os}")
-											span #{os}
-									a(href="#" id="reset").reset Сбросить все
+									ul.filter__sublist
+										- var OSs = ['Android','iOS','Windows Mobile','Symbian','custom']
+										each os in OSs 
+											li.sublist__item
+												label.filter__label.checkbox__label
+													input(type="checkbox" name="#{os}")
+													span #{os}
+										a(href="#" id="reset").reset Сбросить все
 				.products__block
 					.products__block__header
 						.header__left
 							span Сортировать по
-							.sort-by__layout
-							- var sort = ['по цене','по возрастанию']
-							ul.sort-by-cost__list
-								each item in sort
-									li.sort-by-cost__item #{item}
-						.header_right
-							span Вид каталога
-							- var layout_list = ['list__small','list__big','tile']
-							ul.layout_list
-								each layout in layout_list
-									li.layout_item
-										a( href="#" class="layout__button #{layout}" id="#{layout}") #{layout}
-					- var products = []
+							.sort-by__layout по цене
+								- var sort = ['по цене','по популярности']
+								ul.sort-by__list
+									each item in sort
+										li.sort-by__item #{item}
+						.header__right
+							span.layout__titile Вид каталога
+							- var layout_list = ['list__big','tile','list__small']
+							ul.layout__list
+								each layout,index in layout_list
+									li.layout__item
+										a( href="#" class="layout__button #{layout} " + ((index == 2)? 'layout__button__active':"") id="#{layout}") #{layout}
+
 					ul.products__list
-						each product in products
-							li.product
-								img(src="#{product.img[0]}", alt="big photo").big-photo
-								img(src="#{image}", alt="small photo").small-photo
+						- for(var i = 0; i < 9; i++)
+							li.products__item
+								.products__item__inner
+									.products__left
+										.products__slideshow
+											a(href="#").products__slideshow-display
+												img(src="http://lorempixel.com/200/200/city", alt="product foto").prouducts__big-photo
+											ul.products__slideshow-thombs
+												- for(var j = 0; j < 3; j++)
+													li.products_slideshow-item
+														a(href="#").products_slideshow-item__inner
+															img(src="http://lorempixel.com/200/200/people", alt="small pick")
+											.products__article
+												span.products__article__word Артикул
+												span.products__article__code 123456
+										.products__desc
+											.products__desc-title Samsung GT-I9301I GALAXY S 3
+											ul.products__options
+												-var options= {"Тип SIM-карты":'Micro-SIM',"Количество SIM-карт":'1',"Цвет":'Белый',"ОС":'Android',"Связь 2G":'Есть',"4G(LTE)":'Нет',"GPS-модуль":'Есть'}
+												each val,option in options
+													li.products__option
+														span.option__name #{option}
+														span.option__value #{val}
+											span.products_short__desc 
+												| Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... 
+											.products__rating
+												ul.products__rating-stars
+													- for(var j = 0; j < 5; j++)
+														li(class="" + ((j<4)? "products__rating__star-red":"")).products__rating__star
+												span.product__rating-number 4
+									.product_right
+										.product__info
+											.product__price 11 290
+										.product__right__buttom
+											a(href="#").product__buy-button В корзину
+											.have__in__stock__message В наличии
+					.pagination
+						ul.page__list
+							li.page__item 
+								a(href="#" id="page__prev").pagination__link  &#60;
+							- for(var i = 1; i < 4;i++)
+								li.page__item 
+									a(href="#").pagination__link= i
+							li.page__item 
+								a(href="#" id="page__next").pagination__link &#62;
+			.container					
 				.info__block
 					h2.main__title Важная информация
 					.container
@@ -131,24 +194,26 @@ body
 						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iure minima aspernatur veritatis expedita tempora aperiam eos modi ratione. Earum nisi dolores ex, deleniti assumenda libero minima quas unde perspiciatis!
 						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iure minima aspernatur veritatis expedita tempora aperiam eos modi ratione. Earum nisi dolores ex, deleniti assumenda libero minima quas unde perspiciatis!
 						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iure minima aspernatur veritatis expedita tempora aperiam eos modi ratione. Earum nisi dolores ex, deleniti assumenda libero minima quas unde perspiciatis!
-				footer.footer
-					.foooter__top
+			footer.footer
+				.footer__top
+					.container
 						.footer__top__left
 							figure.logo.logo__footer
-								img(src="#", alt="COOLTECH logo").logo__img
+								img(src="img/white-logo.png", alt="COOLTECH logo").logo__img
 						.footer__top__right
 							.socials.footer__socials
 								- var items = ['vk','fb','tw']
 								ul.socials__list
 									each item in items
 										li(class="socials__item socials__item__#{item}")
-											a(href="#" target="_blank").social_link=item
+											a(href="#" target="_blank").social__link=item
 							nav.nav.footer__nav
-								.conteiner
+								.container
 									- var items = ['Плашнеты','Мобильние телефоны','Mp3 плееры','Персональние компьютеры','Ноутбуки','Аксессуары','Бытовая техника']
 									ul.nav__list
 										- each item, index in items
-											li(class= (index == 1)? "active" : " ").nav_item 
+											li(class= (index == 1)? "active" : " ").nav__item 
 												a(href="#").nav__link #{item}
-					.footer__bottom
+				.footer__bottom
+					.container
 						span All rights reserved. 2015. no copy alowed

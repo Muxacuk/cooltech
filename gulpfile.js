@@ -1,9 +1,11 @@
 var gulp = require("gulp");
 var plumber = require('gulp-plumber');
 var jade = require('gulp-jade');
-var compass = require('gulp-compass');
+var sass = require('gulp-sass');
 var browserSync = require("browser-sync");
- 
+var spritesmith = require('gulp.spritesmith')
+var args = require('yargs').argv;
+
 gulp.task('jade',function () {
 	gulp.src('app/_jade/*.jade')
 	    .pipe(plumber())
@@ -12,15 +14,13 @@ gulp.task('jade',function () {
     	}))
 	    .pipe(gulp.dest('app/'));
 });
- 
-gulp.task('compass', function () {
-  gulp.src('app/sass/main.scss')
+
+
+gulp.task('sass', function () {
+  gulp.src('app/_sass/*.scss')
   	.pipe(plumber())
-    .pipe(compass({
-      config_file: 'config.rb',
-      css: 'app/_css',
-      sass: 'app/_sass'
-    }))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('app/_css'));
 });
 
 gulp.task('server',function(){
@@ -31,13 +31,31 @@ gulp.task('server',function(){
 			}
 		})
 });
+
+
+
 gulp.task('watch', function(){
 	gulp.watch([
 			'app/index.html',
 			'app/js/**/*.js',
 			'app/_css/*.css'
 	]).on('change', browserSync.reload);
-	gulp.watch('app/_sass/**/*',['compass']);
+	gulp.watch('app/_sass/**/*',['sass']);
 	gulp.watch('app/_jade/**/*',['jade']);
 });
+
+
+
+gulp.task('sprite', function () {
+  var dir= args.env||'**'
+  var spriteData = gulp.src('app/pictures/'+dir+'/*.png').pipe(spritesmith({
+    imgName: 'sprite'+dir+'.png',
+    cssName: '_sprite_'+dir+'.scss',
+    padding: 20
+  }));
+  return spriteData.pipe(gulp.dest('app/pictures/'));
+});
+
+
+
 gulp.task('default',['server','watch']);
