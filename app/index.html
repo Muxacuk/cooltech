@@ -124,92 +124,90 @@
                         <input type="checkbox" name="Motorola"/><span>Motorola</span>
                       </label>
                     </li>
-                  </ul><a href="#" id="reset" class="reset">Сбросить все</a>
+                  </ul><a href="#" class="reset">Сбросить фильтр</a>
                 </div>
               </li>
               <li class="filter__item"><a href="#" class="filter__item__title">Цена</a>
                 <div class="filter__item__body">
-                  <label class="cost__label">от
-                    <input type="text"/>
+                  <label class="cost__label">от    
+                    <input type="text" class="for"/>
                   </label>
-                  <label class="cost__label">до
-                    <input type="text"/>
+                  <label class="cost__label">до   
+                    <input type="text" class="to"/>
                   </label>
                 </div>
-                <div class="cost__slider">
-                  <div class="cost__slider__body"></div>
-                </div>
+                <div data-min="500" data-max="5000" class="cost__slider"></div>
               </li>
               <li class="filter__item"><a href="#" class="filter__item__title">Цвет</a>
                 <div class="filter__item__body">
                   <ul class="filter__sublist filter__color__list">
-                    <li class="sublist__item color__item">
+                    <li class="color__item sublist__item">
                       <label class="color__label">
                         <input type="radio" name="color" value="ffffff"/>
                         <div style="background:#ffffff;" class="color__pic"></div>
                       </label>
                     </li>
-                    <li class="sublist__item color__item">
+                    <li class="color__item sublist__item">
                       <label class="color__label">
                         <input type="radio" name="color" value="cccccc"/>
                         <div style="background:#cccccc;" class="color__pic"></div>
                       </label>
                     </li>
-                    <li class="sublist__item color__item">
+                    <li class="color__item sublist__item">
                       <label class="color__label">
                         <input type="radio" name="color" value="000000"/>
                         <div style="background:#000000;" class="color__pic"></div>
                       </label>
                     </li>
-                    <li class="sublist__item color__item">
+                    <li class="color__item sublist__item">
                       <label class="color__label">
                         <input type="radio" name="color" value="0a3153"/>
                         <div style="background:#0a3153;" class="color__pic"></div>
                       </label>
                     </li>
-                    <li class="sublist__item color__item">
+                    <li class="color__item sublist__item">
                       <label class="color__label">
                         <input type="radio" name="color" value="ff1800"/>
                         <div style="background:#ff1800;" class="color__pic"></div>
                       </label>
                     </li>
-                    <li class="sublist__item color__item">
+                    <li class="color__item sublist__item">
                       <label class="color__label">
                         <input type="radio" name="color" value="fff343"/>
                         <div style="background:#fff343;" class="color__pic"></div>
                       </label>
                     </li>
-                    <li class="sublist__item color__item">
+                    <li class="color__item sublist__item">
                       <label class="color__label">
                         <input type="radio" name="color" value="fb914a"/>
                         <div style="background:#fb914a;" class="color__pic"></div>
                       </label>
                     </li>
-                    <li class="sublist__item color__item">
+                    <li class="color__item sublist__item">
                       <label class="color__label">
                         <input type="radio" name="color" value="92c37c"/>
                         <div style="background:#92c37c;" class="color__pic"></div>
                       </label>
                     </li>
-                    <li class="sublist__item color__item">
+                    <li class="color__item sublist__item">
                       <label class="color__label">
                         <input type="radio" name="color" value="40a6ff"/>
                         <div style="background:#40a6ff;" class="color__pic"></div>
                       </label>
                     </li>
-                    <li class="sublist__item color__item">
+                    <li class="color__item sublist__item">
                       <label class="color__label">
                         <input type="radio" name="color" value="9870ad"/>
                         <div style="background:#9870ad;" class="color__pic"></div>
                       </label>
                     </li>
-                    <li class="sublist__item color__item">
+                    <li class="color__item sublist__item">
                       <label class="color__label">
                         <input type="radio" name="color" value="dc78ad"/>
                         <div style="background:#dc78ad;" class="color__pic"></div>
                       </label>
                     </li>
-                    <li class="sublist__item color__item">
+                    <li class="color__item sublist__item">
                       <label class="color__label">
                         <input type="radio" name="color" value="7f401d"/>
                         <div style="background:#7f401d;" class="color__pic"></div>
@@ -218,7 +216,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="filter__item"><a href="#" class="filter__item__title">Бренды</a>
+              <li class="filter__item"><a href="#" class="filter__item__title">Операционные системы</a>
                 <div class="filter__item__body">
                   <ul class="filter__sublist">
                     <li class="sublist__item">
@@ -245,7 +243,7 @@
                       <label class="filter__label checkbox__label">
                         <input type="checkbox" name="custom"/><span>custom</span>
                       </label>
-                    </li><a href="#" id="reset" class="reset">Сбросить все</a>
+                    </li><a href="#" class="reset">Сбросить фильтр</a>
                   </ul>
                 </div>
               </li>
@@ -255,7 +253,7 @@
         <div class="products__block">
           <div class="products__block__header">
             <div class="header__left"><span>Сортировать по</span>
-              <div class="sort-by__layout">по цене
+              <div class="sort-by__layout"> <span>по цене</span>
                 <ul class="sort-by__list">
                   <li class="sort-by__item">по цене</li>
                   <li class="sort-by__item">по популярности</li>
@@ -263,22 +261,22 @@
               </div>
             </div>
             <div class="header__right"><span class="layout__titile">Вид каталога</span>
-              <ul class="layout__list">
-                <li class="layout__item"><a href="#" id="list__big" class="layout__button list__big ">list__big</a></li>
-                <li class="layout__item"><a href="#" id="tile" class="layout__button tile ">tile</a></li>
-                <li class="layout__item"><a href="#" id="list__small" class="layout__button list__small layout__button__active">list__small</a></li>
+              <ul class="layout__list closed">
+                <li class="layout__item"><a href="#" data-layout="list__big" id="list__big" class="layout__button list__big-btn ">list__big</a></li>
+                <li class="layout__item"><a href="#" data-layout="tile" id="tile" class="layout__button tile-btn layout__button__active">tile</a></li>
+                <li class="layout__item"><a href="#" data-layout="list__small" id="list__small" class="layout__button list__small-btn ">list__small</a></li>
               </ul>
             </div>
           </div>
-          <ul class="products__list">
+          <ul class="products__list tile">
             <li class="products__item">
               <div class="products__item__inner">
                 <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/city" alt="product foto" class="prouducts__big-photo"/></a>
+                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
                     <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
                     </ul>
                     <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
                   </div>
@@ -306,7 +304,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="product_right">
+                <div class="product__right">
                   <div class="product__info">
                     <div class="product__price">11 290</div>
                   </div>
@@ -319,11 +317,11 @@
             <li class="products__item">
               <div class="products__item__inner">
                 <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/city" alt="product foto" class="prouducts__big-photo"/></a>
+                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
                     <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
                     </ul>
                     <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
                   </div>
@@ -351,7 +349,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="product_right">
+                <div class="product__right">
                   <div class="product__info">
                     <div class="product__price">11 290</div>
                   </div>
@@ -364,11 +362,11 @@
             <li class="products__item">
               <div class="products__item__inner">
                 <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/city" alt="product foto" class="prouducts__big-photo"/></a>
+                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
                     <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
                     </ul>
                     <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
                   </div>
@@ -396,7 +394,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="product_right">
+                <div class="product__right">
                   <div class="product__info">
                     <div class="product__price">11 290</div>
                   </div>
@@ -409,11 +407,11 @@
             <li class="products__item">
               <div class="products__item__inner">
                 <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/city" alt="product foto" class="prouducts__big-photo"/></a>
+                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
                     <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
                     </ul>
                     <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
                   </div>
@@ -441,7 +439,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="product_right">
+                <div class="product__right">
                   <div class="product__info">
                     <div class="product__price">11 290</div>
                   </div>
@@ -454,11 +452,11 @@
             <li class="products__item">
               <div class="products__item__inner">
                 <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/city" alt="product foto" class="prouducts__big-photo"/></a>
+                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
                     <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
                     </ul>
                     <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
                   </div>
@@ -486,7 +484,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="product_right">
+                <div class="product__right">
                   <div class="product__info">
                     <div class="product__price">11 290</div>
                   </div>
@@ -499,11 +497,11 @@
             <li class="products__item">
               <div class="products__item__inner">
                 <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/city" alt="product foto" class="prouducts__big-photo"/></a>
+                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
                     <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
                     </ul>
                     <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
                   </div>
@@ -531,7 +529,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="product_right">
+                <div class="product__right">
                   <div class="product__info">
                     <div class="product__price">11 290</div>
                   </div>
@@ -544,11 +542,11 @@
             <li class="products__item">
               <div class="products__item__inner">
                 <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/city" alt="product foto" class="prouducts__big-photo"/></a>
+                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
                     <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
                     </ul>
                     <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
                   </div>
@@ -576,7 +574,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="product_right">
+                <div class="product__right">
                   <div class="product__info">
                     <div class="product__price">11 290</div>
                   </div>
@@ -589,11 +587,11 @@
             <li class="products__item">
               <div class="products__item__inner">
                 <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/city" alt="product foto" class="prouducts__big-photo"/></a>
+                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
                     <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
                     </ul>
                     <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
                   </div>
@@ -621,7 +619,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="product_right">
+                <div class="product__right">
                   <div class="product__info">
                     <div class="product__price">11 290</div>
                   </div>
@@ -634,11 +632,11 @@
             <li class="products__item">
               <div class="products__item__inner">
                 <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="http://lorempixel.com/200/200/city" alt="product foto" class="prouducts__big-photo"/></a>
+                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
                     <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="http://lorempixel.com/200/200/people" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
                     </ul>
                     <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
                   </div>
@@ -666,7 +664,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="product_right">
+                <div class="product__right">
                   <div class="product__info">
                     <div class="product__price">11 290</div>
                   </div>
@@ -704,9 +702,7 @@
       <footer class="footer">
         <div class="footer__top">
           <div class="container">
-            <div class="footer__top__left">
-              <figure class="logo logo__footer"><img src="img/white-logo.png" alt="COOLTECH logo" class="logo__img"/></figure>
-            </div>
+            <div class="footer__top__left"><a href="#" class="logo logo__footer"><img src="img/white-logo.png" alt="COOLTECH logo" class="logo__img"/></a></div>
             <div class="footer__top__right">
               <div class="socials footer__socials">
                 <ul class="socials__list">
@@ -737,4 +733,8 @@
       </footer>
     </main>
   </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.columnizer.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/main.js"></script>
 </body>

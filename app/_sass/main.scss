@@ -14,11 +14,16 @@ $gray: #dee1e4;
 
 @import	"common/misc";
 
+@import "plugins/jquery-ui.min";
+@import "widgets/slider";
+
 @import "sections/header";
 @import "sections/main_navigation";
 @import "sections/breadcrumbs";
 @import "sections/sidebar";
 @import "sections/products_block_header";
 @import "sections/products_block_medium_list";
+@import "sections/products_block_small_list";
+@import "sections/products_block_thumbail";
 @import "sections/paginator";
 @import "sections/footer";

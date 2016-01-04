@@ -1,0 +1,180 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$border-star-name: 'border-star';
+$border-star-x: 0px;
+$border-star-y: 0px;
+$border-star-offset-x: 0px;
+$border-star-offset-y: 0px;
+$border-star-width: 16px;
+$border-star-height: 16px;
+$border-star-total-width: 116px;
+$border-star-total-height: 83px;
+$border-star-image: '../pictures/spritemisc.png';
+$border-star: (0px, 0px, 0px, 0px, 16px, 16px, 116px, 83px, '../pictures/spritemisc.png', 'border-star', );
+$chek-black-name: 'chek_black';
+$chek-black-x: 72px;
+$chek-black-y: 35px;
+$chek-black-offset-x: -72px;
+$chek-black-offset-y: -35px;
+$chek-black-width: 13px;
+$chek-black-height: 10px;
+$chek-black-total-width: 116px;
+$chek-black-total-height: 83px;
+$chek-black-image: '../pictures/spritemisc.png';
+$chek-black: (72px, 35px, -72px, -35px, 13px, 10px, 116px, 83px, '../pictures/spritemisc.png', 'chek_black', );
+$chek-white-name: 'chek_white';
+$chek-white-x: 38px;
+$chek-white-y: 72px;
+$chek-white-offset-x: -38px;
+$chek-white-offset-y: -72px;
+$chek-white-width: 13px;
+$chek-white-height: 10px;
+$chek-white-total-width: 116px;
+$chek-white-total-height: 83px;
+$chek-white-image: '../pictures/spritemisc.png';
+$chek-white: (38px, 72px, -38px, -72px, 13px, 10px, 116px, 83px, '../pictures/spritemisc.png', 'chek_white', );
+$cost-extr-name: 'cost_extr';
+$cost-extr-x: 108px;
+$cost-extr-y: 0px;
+$cost-extr-offset-x: -108px;
+$cost-extr-offset-y: 0px;
+$cost-extr-width: 8px;
+$cost-extr-height: 14px;
+$cost-extr-total-width: 116px;
+$cost-extr-total-height: 83px;
+$cost-extr-image: '../pictures/spritemisc.png';
+$cost-extr: (108px, 0px, -108px, 0px, 8px, 14px, 116px, 83px, '../pictures/spritemisc.png', 'cost_extr', );
+$down-name: 'down';
+$down-x: 71px;
+$down-y: 72px;
+$down-offset-x: -71px;
+$down-offset-y: -72px;
+$down-width: 13px;
+$down-height: 9px;
+$down-total-width: 116px;
+$down-total-height: 83px;
+$down-image: '../pictures/spritemisc.png';
+$down: (71px, 72px, -71px, -72px, 13px, 9px, 116px, 83px, '../pictures/spritemisc.png', 'down', );
+$red-star-name: 'red-star';
+$red-star-x: 72px;
+$red-star-y: 0px;
+$red-star-offset-x: -72px;
+$red-star-offset-y: 0px;
+$red-star-width: 16px;
+$red-star-height: 15px;
+$red-star-total-width: 116px;
+$red-star-total-height: 83px;
+$red-star-image: '../pictures/spritemisc.png';
+$red-star: (72px, 0px, -72px, 0px, 16px, 15px, 116px, 83px, '../pictures/spritemisc.png', 'red-star', );
+$up-name: 'up';
+$up-x: 0px;
+$up-y: 72px;
+$up-offset-x: 0px;
+$up-offset-y: -72px;
+$up-width: 18px;
+$up-height: 11px;
+$up-total-width: 116px;
+$up-total-height: 83px;
+$up-image: '../pictures/spritemisc.png';
+$up: (0px, 72px, 0px, -72px, 18px, 11px, 116px, 83px, '../pictures/spritemisc.png', 'up', );
+$view-list-2-name: 'view-list-2';
+$view-list-2-x: 36px;
+$view-list-2-y: 0px;
+$view-list-2-offset-x: -36px;
+$view-list-2-offset-y: 0px;
+$view-list-2-width: 16px;
+$view-list-2-height: 16px;
+$view-list-2-total-width: 116px;
+$view-list-2-total-height: 83px;
+$view-list-2-image: '../pictures/spritemisc.png';
+$view-list-2: (36px, 0px, -36px, 0px, 16px, 16px, 116px, 83px, '../pictures/spritemisc.png', 'view-list-2', );
+$view-list-name: 'view-list';
+$view-list-x: 0px;
+$view-list-y: 36px;
+$view-list-offset-x: 0px;
+$view-list-offset-y: -36px;
+$view-list-width: 16px;
+$view-list-height: 16px;
+$view-list-total-width: 116px;
+$view-list-total-height: 83px;
+$view-list-image: '../pictures/spritemisc.png';
+$view-list: (0px, 36px, 0px, -36px, 16px, 16px, 116px, 83px, '../pictures/spritemisc.png', 'view-list', );
+$view-thumbnail-name: 'view-thumbnail';
+$view-thumbnail-x: 36px;
+$view-thumbnail-y: 36px;
+$view-thumbnail-offset-x: -36px;
+$view-thumbnail-offset-y: -36px;
+$view-thumbnail-width: 16px;
+$view-thumbnail-height: 16px;
+$view-thumbnail-total-width: 116px;
+$view-thumbnail-total-height: 83px;
+$view-thumbnail-image: '../pictures/spritemisc.png';
+$view-thumbnail: (36px, 36px, -36px, -36px, 16px, 16px, 116px, 83px, '../pictures/spritemisc.png', 'view-thumbnail', );
+$spritesheet-width: 116px;
+$spritesheet-height: 83px;
+$spritesheet-image: '../pictures/spritemisc.png';
+$spritesheet-sprites: ($border-star, $chek-black, $chek-white, $cost-extr, $down, $red-star, $up, $view-list-2, $view-list, $view-thumbnail, );
+$spritesheet: (116px, 83px, '../pictures/spritemisc.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

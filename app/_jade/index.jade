@@ -83,20 +83,20 @@ body
 												label.filter__label.checkbox__label
 													input(type="checkbox" name="#{brand}")
 													span #{brand}
-									a(href="#" id="reset").reset Сбросить все
+									a(href="#").reset Сбросить фильтр
 
 							li.filter__item
 								a(href="#").filter__item__title Цена
 								.filter__item__body
 
-											label.cost__label от
-												input(type="text")
+											label.cost__label от    
+												input(type="text").for
 
-											label.cost__label до
-												input(type="text")
+											label.cost__label до   
+												input(type="text").to
 
-									.cost__slider
-										.cost__slider__body
+									div(data-min="500" data-max="5000").cost__slider
+
 
 							li.filter__item
 								a(href="#").filter__item__title Цвет
@@ -105,13 +105,13 @@ body
 									ul.filter__sublist.filter__color__list
 
 										each color in colors
-											li.sublist__item.color__item
+											li.color__item.sublist__item
 												label.color__label
 													input(type="radio" name="color" value="#{color}")
 													div(style="background:##{color};").color__pic
 
 							li.filter__item
-								a(href="#").filter__item__title Бренды
+								a(href="#").filter__item__title Операционные системы
 								.filter__item__body
 									ul.filter__sublist
 										- var OSs = ['Android','iOS','Windows Mobile','Symbian','custom']
@@ -120,12 +120,13 @@ body
 												label.filter__label.checkbox__label
 													input(type="checkbox" name="#{os}")
 													span #{os}
-										a(href="#" id="reset").reset Сбросить все
+										a(href="#").reset Сбросить фильтр
 				.products__block
 					.products__block__header
 						.header__left
 							span Сортировать по
-							.sort-by__layout по цене
+							.sort-by__layout 
+								span по цене
 								- var sort = ['по цене','по популярности']
 								ul.sort-by__list
 									each item in sort
@@ -133,24 +134,24 @@ body
 						.header__right
 							span.layout__titile Вид каталога
 							- var layout_list = ['list__big','tile','list__small']
-							ul.layout__list
+							ul.layout__list.closed
 								each layout,index in layout_list
 									li.layout__item
-										a( href="#" class="layout__button #{layout} " + ((index == 2)? 'layout__button__active':"") id="#{layout}") #{layout}
+										a( href="#" class="layout__button #{layout}-btn " + ((index == 1)? 'layout__button__active':"") data-layout="#{layout}" id="#{layout}") #{layout}
 
-					ul.products__list
+					ul.products__list.tile
 						- for(var i = 0; i < 9; i++)
 							li.products__item
 								.products__item__inner
 									.products__left
 										.products__slideshow
 											a(href="#").products__slideshow-display
-												img(src="http://lorempixel.com/200/200/city", alt="product foto").prouducts__big-photo
+												img(src="img/samsung1.png", alt="product foto").prouducts__big-photo
 											ul.products__slideshow-thombs
-												- for(var j = 0; j < 3; j++)
+												- for(var j = 1; j < 4; j++)
 													li.products_slideshow-item
 														a(href="#").products_slideshow-item__inner
-															img(src="http://lorempixel.com/200/200/people", alt="small pick")
+															img(src="img/samsung#{j}.png", alt="small pick")
 											.products__article
 												span.products__article__word Артикул
 												span.products__article__code 123456
@@ -169,7 +170,7 @@ body
 													- for(var j = 0; j < 5; j++)
 														li(class="" + ((j<4)? "products__rating__star-red":"")).products__rating__star
 												span.product__rating-number 4
-									.product_right
+									.product__right
 										.product__info
 											.product__price 11 290
 										.product__right__buttom
@@ -198,7 +199,7 @@ body
 				.footer__top
 					.container
 						.footer__top__left
-							figure.logo.logo__footer
+							a(href="#").logo.logo__footer
 								img(src="img/white-logo.png", alt="COOLTECH logo").logo__img
 						.footer__top__right
 							.socials.footer__socials
@@ -217,3 +218,7 @@ body
 				.footer__bottom
 					.container
 						span All rights reserved. 2015. no copy alowed
+	script(src="js/jquery.min.js")
+	script(src="js/jquery.columnizer.min.js")
+	script(src="js/jquery-ui.min.js")
+	script(src="js/main.js")

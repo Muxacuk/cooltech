@@ -1,0 +1,88 @@
+.footer{
+	background: url('../pictures/backgrounds/footer-bg.png');
+	margin-top: 15px;
+}
+.footer__top{
+	@extend %clear; 
+	padding-top: 34px;
+	border-bottom: 1px solid #494949; 
+}
+
+.logo__footer{
+	margin: 0;
+	margin-top: 36px;
+}
+
+.footer__top__right{
+	float: right;
+	max-width: 550px;
+	margin-left: -25px;
+}
+
+.footer__socials{
+	float: right;
+	.socials__item {
+		margin-left: 24px;
+	}
+	.social__link{
+		width: 45px;
+		height: 45px;
+		display: block;
+		background: white;
+		position: relative;
+
+		&:before{
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			content: '';
+			display: block;
+			position: absolute;
+		}
+	}
+	$socials: ('fb','vk','tw');
+	$socials_icon: ($footer-fb,$footer-vk,$footer-tw);
+	$socials_icon-h: ($footer-fb-hover,$footer-vk-hover,$footer-tw-hover);
+	@for $i from 1 through 3{
+		.socials__item__#{nth($socials, $i)}{
+			.social__link:before{
+				@include sprite(nth($socials_icon, $i));
+			}
+		&:hover{
+			.social__link:before{
+				@include sprite(nth($socials_icon-h, $i));
+			}
+		}
+		}
+	}
+}
+
+.footer__nav{
+	background: transparent;
+	margin-top: 30px;
+	float: right;
+	.nav__list{
+		text-align: right;
+	}
+	.nav__item{
+		margin: 0px 0px 20px 20px;
+		&:hover{
+			background: none;
+		}
+	}
+	.nav__link{
+		font-size: 14px;
+		color: white;
+		padding: 0px;
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.footer__bottom{
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	padding: 6px;
+}

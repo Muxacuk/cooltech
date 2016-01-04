@@ -1,0 +1,35 @@
+.nav{
+	background: white;
+	border-bottom: 1px solid $gray;
+}
+.nav__list{
+	list-style: none;
+	text-align: justify;
+	font-size: 0px;
+	padding: 0px;
+	}
+
+.nav__item{
+	display: inline-block;
+	font-size: 16px;
+
+	&:hover{
+		background: #e4e2e2;
+	}
+}
+.nav__item__active{
+	background: $orange;
+
+	&:hover{
+		background: darken($orange, 5%);
+	}
+	.nav__link{
+		color: white;
+	}
+}
+.nav__link{
+	color: black;
+	display: block;
+	text-decoration: none;
+	padding: 15px 16px;
+}

@@ -1,0 +1,35 @@
+body{
+	background: #f4f4f4; 
+}
+.wrap{
+	font-family: $reg;
+	margin: auto;
+}
+.container{
+	max-width: 1100px;
+	margin: auto;
+	@extend %clear;
+}
+.socials__item{
+	border-radius: 50%;
+	float: left;
+	overflow: hidden;
+}
+.socials__item:first-child{
+	margin-left: 0px;
+}
+.main__title{
+	font-size: 20px;
+	font-family: $sb;
+	margin-bottom: 0px;
+}
+.column{
+	text-align: justify;
+	width: 530px !important;
+	&.first{
+		float: left !important;
+	}
+	&.last{
+		float: right !important;
+	}
+}
