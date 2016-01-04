@@ -1,7 +1,7 @@
-Instuctions to set this app
+>>>>Instuctions to set this app
 
-git clone https://github.com/Muxacuk/cooltech site
-cd site
-bower i
-npm i
-gulp
+1.git clone https://github.com/Muxacuk/cooltech site
+2.cd site
+3.bower i
+4.npm i
+5.gulp
