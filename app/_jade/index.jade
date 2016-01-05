@@ -1,13 +1,15 @@
-include templates/head
-body 
-	.wrap
-		include templates/header
-		main.page-content
-			.container
-				h2.main__title Мобильные телефоны
-				include templates/sidebar
-				include templates/products_block
-			.container					
-				include templates/important_inform
-			include templates/footer
-	include templates/scripts_include
+<!DOCTYPE html>
+html(lang="ru")
+	include templates/head
+	body 
+		.wrap
+			include templates/header
+			main.page-content
+				.container
+					h2.main__title Мобильные телефоны
+					include templates/sidebar
+					include templates/products_block
+				.container					
+					include templates/important_inform
+				include templates/footer
+		include templates/scripts_include

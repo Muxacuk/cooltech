@@ -1,740 +1,729 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-<head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=ege,chrome=1"/>
-  <meta name="viewport" content="width=device-width"/>
-  <title>cooltech</title>
-  <link rel="stylesheet" href="_css/main.css"/>
-</head>
-<body> 
-  <div class="wrap">
-    <header class="header">
-      <div class="header__top">
-        <div class="container">
-          <div class="header-left">
-            <div class="socials header-socials">
-              <ul class="socials__list">
-                <li class="socials__item socials__item__fb"><a href="#" target="_blank" class="social__link">
-                    <div class="social_icon"></div></a></li>
-                <li class="socials__item socials__item__vk"><a href="#" target="_blank" class="social__link">
-                    <div class="social_icon"></div></a></li>
-                <li class="socials__item socials__item__tw"><a href="#" target="_blank" class="social__link">
-                    <div class="social_icon"></div></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="header-right">
-            <div class="contacts"><span class="contacts__adres">ул. Маяковская 6, офис 17</span><a href="#" class="contacts__telephone">+7 (921) 123-12-13</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="header__bottom">
-        <div class="container"><a href="#main" class="logo"><img src="img/logo.png" alt="cooltech logo" class="logo__img"/></a>
-          <div class="search">
-            <form class="search__form">
-              <input type="text" id="search_input" placeholder="Что будем искать" class="search__input"/>
-              <input type="submit" value="Найти" class="search__submit"/>
-            </form>
-          </div>
-          <div class="menu">
-            <ul class="menu__list">
-              <li class="menu__list__item"> <a href="#" class="menu_link">Карта проезда</a></li>
-              <li class="menu__list__item"> <a href="#" class="menu_link">История заказов</a></li>
-              <li class="menu__list__item"> <a href="#" class="menu_link">Корзина</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <nav class="nav">
-        <div class="container">
-          <ul class="nav__list">
-            <li class="  nav__item"> <a href="#" class="nav__link">Плашнеты</a></li>
-            <li class="nav__item__active nav__item"> <a href="#" class="nav__link">Мобильние телефоны</a></li>
-            <li class="  nav__item"> <a href="#" class="nav__link">Mp3 плееры</a></li>
-            <li class="  nav__item"> <a href="#" class="nav__link">Персональние компьютеры</a></li>
-            <li class="  nav__item"> <a href="#" class="nav__link">Ноутбуки</a></li>
-            <li class="  nav__item"> <a href="#" class="nav__link">Аксессуары</a></li>
-            <li class="  nav__item"> <a href="#" class="nav__link">Бытовая техника</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="breadcrumbs">
-        <div class="container">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item"> <a href="#" class="breadcrumbs__link">Главная</a></li>
-            <li class="breadcrumbs__item"> <a href="#" class="breadcrumbs__link">Каталог</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <main class="page-content">
-      <div class="container">
-        <h2 class="main__title">Мобильные телефоны</h2>
-        <aside class="sidebar">
-          <section class="sidebar__section categories">
-            <ul class="categories__list">
-              <li class="categories__item"><a href="#" class="categoriies__link">Флагманы</a></li>
-              <li class="categories__item"><a href="#" class="active categoriies__link">Бюджетная линейка</a></li>
-            </ul>
-          </section>
-          <section class="sidebar__section filter">
-            <ul class="filter__list">
-              <li class="filter__item"><a href="#" class="filter__item__title">Наличие в магазинах</a>
-                <div class="filter__item__body">
-                  <ul class="filter__sublist">
-                    <li class="sublist__item">
-                      <label class="filter__label radio__label">
-                        <input type="radio" name="have_in_shop" checked="checked"/><span>во всех магазинах</span>
-                      </label>
-                    </li>
-                    <li class="sublist__item">
-                      <label class="filter__label radio__label">
-                        <input type="radio" name="have_in_shop"/><span>В ближайшем ко мне магазине</span>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="filter__item"><a href="#" class="filter__item__title">Бренды</a>
-                <div class="filter__item__body">
-                  <ul class="filter__sublist">
-                    <li class="sublist__item">
-                      <label class="filter__label checkbox__label">
-                        <input type="checkbox" name="Lenovo"/><span>Lenovo</span>
-                      </label>
-                    </li>
-                    <li class="sublist__item">
-                      <label class="filter__label checkbox__label">
-                        <input type="checkbox" name="Apple"/><span>Apple</span>
-                      </label>
-                    </li>
-                    <li class="sublist__item">
-                      <label class="filter__label checkbox__label">
-                        <input type="checkbox" name="Samsung"/><span>Samsung</span>
-                      </label>
-                    </li>
-                    <li class="sublist__item">
-                      <label class="filter__label checkbox__label">
-                        <input type="checkbox" name="Asus"/><span>Asus</span>
-                      </label>
-                    </li>
-                    <li class="sublist__item">
-                      <label class="filter__label checkbox__label">
-                        <input type="checkbox" name="Motorola"/><span>Motorola</span>
-                      </label>
-                    </li>
-                  </ul><a href="#" class="reset">Сбросить фильтр</a>
-                </div>
-              </li>
-              <li class="filter__item"><a href="#" class="filter__item__title">Цена</a>
-                <div class="filter__item__body">
-                  <label class="cost__label">от    
-                    <input type="text" class="for"/>
-                  </label>
-                  <label class="cost__label">до   
-                    <input type="text" class="to"/>
-                  </label>
-                </div>
-                <div data-min="500" data-max="5000" class="cost__slider"></div>
-              </li>
-              <li class="filter__item"><a href="#" class="filter__item__title">Цвет</a>
-                <div class="filter__item__body">
-                  <ul class="filter__sublist filter__color__list">
-                    <li class="color__item sublist__item">
-                      <label class="color__label">
-                        <input type="checkbox" name="color" value="ffffff"/>
-                        <div style="background:#ffffff;" class="color__pic"></div>
-                      </label>
-                    </li>
-                    <li class="color__item sublist__item">
-                      <label class="color__label">
-                        <input type="checkbox" name="color" value="cccccc"/>
-                        <div style="background:#cccccc;" class="color__pic"></div>
-                      </label>
-                    </li>
-                    <li class="color__item sublist__item">
-                      <label class="color__label">
-                        <input type="checkbox" name="color" value="000000"/>
-                        <div style="background:#000000;" class="color__pic"></div>
-                      </label>
-                    </li>
-                    <li class="color__item sublist__item">
-                      <label class="color__label">
-                        <input type="checkbox" name="color" value="0a3153"/>
-                        <div style="background:#0a3153;" class="color__pic"></div>
-                      </label>
-                    </li>
-                    <li class="color__item sublist__item">
-                      <label class="color__label">
-                        <input type="checkbox" name="color" value="ff1800"/>
-                        <div style="background:#ff1800;" class="color__pic"></div>
-                      </label>
-                    </li>
-                    <li class="color__item sublist__item">
-                      <label class="color__label">
-                        <input type="checkbox" name="color" value="fff343"/>
-                        <div style="background:#fff343;" class="color__pic"></div>
-                      </label>
-                    </li>
-                    <li class="color__item sublist__item">
-                      <label class="color__label">
-                        <input type="checkbox" name="color" value="fb914a"/>
-                        <div style="background:#fb914a;" class="color__pic"></div>
-                      </label>
-                    </li>
-                    <li class="color__item sublist__item">
-                      <label class="color__label">
-                        <input type="checkbox" name="color" value="92c37c"/>
-                        <div style="background:#92c37c;" class="color__pic"></div>
-                      </label>
-                    </li>
-                    <li class="color__item sublist__item">
-                      <label class="color__label">
-                        <input type="checkbox" name="color" value="40a6ff"/>
-                        <div style="background:#40a6ff;" class="color__pic"></div>
-                      </label>
-                    </li>
-                    <li class="color__item sublist__item">
-                      <label class="color__label">
-                        <input type="checkbox" name="color" value="9870ad"/>
-                        <div style="background:#9870ad;" class="color__pic"></div>
-                      </label>
-                    </li>
-                    <li class="color__item sublist__item">
-                      <label class="color__label">
-                        <input type="checkbox" name="color" value="dc78ad"/>
-                        <div style="background:#dc78ad;" class="color__pic"></div>
-                      </label>
-                    </li>
-                    <li class="color__item sublist__item">
-                      <label class="color__label">
-                        <input type="checkbox" name="color" value="7f401d"/>
-                        <div style="background:#7f401d;" class="color__pic"></div>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="filter__item"><a href="#" class="filter__item__title">Операционные системы</a>
-                <div class="filter__item__body">
-                  <ul class="filter__sublist">
-                    <li class="sublist__item">
-                      <label class="filter__label checkbox__label">
-                        <input type="checkbox" name="Android"/><span>Android</span>
-                      </label>
-                    </li>
-                    <li class="sublist__item">
-                      <label class="filter__label checkbox__label">
-                        <input type="checkbox" name="iOS"/><span>iOS</span>
-                      </label>
-                    </li>
-                    <li class="sublist__item">
-                      <label class="filter__label checkbox__label">
-                        <input type="checkbox" name="Windows Mobile"/><span>Windows Mobile</span>
-                      </label>
-                    </li>
-                    <li class="sublist__item">
-                      <label class="filter__label checkbox__label">
-                        <input type="checkbox" name="Symbian"/><span>Symbian</span>
-                      </label>
-                    </li>
-                    <li class="sublist__item">
-                      <label class="filter__label checkbox__label">
-                        <input type="checkbox" name="custom"/><span>custom</span>
-                      </label>
-                    </li><a href="#" class="reset">Сбросить фильтр</a>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </section>
-        </aside>
-        <div class="products__block">
-          <div class="products__block__header">
-            <div class="header__left"><span>Сортировать по</span>
-              <div class="sort-by__layout"> <span>по цене</span>
-                <ul class="sort-by__list">
-                  <li class="sort-by__item">по цене</li>
-                  <li class="sort-by__item">по популярности</li>
-                </ul>
-              </div>
-            </div>
-            <div class="header__right"><span class="layout__titile">Вид каталога</span>
-              <ul class="layout__list closed">
-                <li class="layout__item"><a href="#" data-layout="list__big" id="list__big" class="layout__button list__big-btn ">list__big</a></li>
-                <li class="layout__item"><a href="#" data-layout="tile" id="tile" class="layout__button tile-btn layout__button__active">tile</a></li>
-                <li class="layout__item"><a href="#" data-layout="list__small" id="list__small" class="layout__button list__small-btn ">list__small</a></li>
-              </ul>
-            </div>
-          </div>
-          <ul class="products__list tile">
-            <li class="products__item">
-              <div class="products__item__inner">
-                <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
-                    <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
-                    </ul>
-                    <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
-                  </div>
-                  <div class="products__desc">
-                    <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
-                    <ul class="products__options">
-                      <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
-                      <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
-                      <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
-                      <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
-                      <li class="products__option"><span class="option__name">Связь 2G</span><span class="option__value">Есть</span></li>
-                      <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
-                      <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
-                    </ul><span class="products_short__desc">
-                       
-                      Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
-                    <div class="products__rating">
-                      <ul class="products__rating-stars">
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star"></li>
-                      </ul><span class="product__rating-number">4</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="product__right">
-                  <div class="product__info">
-                    <div class="product__price">11 290</div>
-                  </div>
-                  <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
-                    <div class="have__in__stock__message">В наличии</div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="products__item">
-              <div class="products__item__inner">
-                <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
-                    <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
-                    </ul>
-                    <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
-                  </div>
-                  <div class="products__desc">
-                    <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
-                    <ul class="products__options">
-                      <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
-                      <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
-                      <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
-                      <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
-                      <li class="products__option"><span class="option__name">Связь 2G</span><span class="option__value">Есть</span></li>
-                      <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
-                      <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
-                    </ul><span class="products_short__desc">
-                       
-                      Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
-                    <div class="products__rating">
-                      <ul class="products__rating-stars">
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star"></li>
-                      </ul><span class="product__rating-number">4</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="product__right">
-                  <div class="product__info">
-                    <div class="product__price">11 290</div>
-                  </div>
-                  <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
-                    <div class="have__in__stock__message">В наличии</div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="products__item">
-              <div class="products__item__inner">
-                <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
-                    <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
-                    </ul>
-                    <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
-                  </div>
-                  <div class="products__desc">
-                    <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
-                    <ul class="products__options">
-                      <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
-                      <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
-                      <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
-                      <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
-                      <li class="products__option"><span class="option__name">Связь 2G</span><span class="option__value">Есть</span></li>
-                      <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
-                      <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
-                    </ul><span class="products_short__desc">
-                       
-                      Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
-                    <div class="products__rating">
-                      <ul class="products__rating-stars">
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star"></li>
-                      </ul><span class="product__rating-number">4</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="product__right">
-                  <div class="product__info">
-                    <div class="product__price">11 290</div>
-                  </div>
-                  <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
-                    <div class="have__in__stock__message">В наличии</div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="products__item">
-              <div class="products__item__inner">
-                <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
-                    <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
-                    </ul>
-                    <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
-                  </div>
-                  <div class="products__desc">
-                    <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
-                    <ul class="products__options">
-                      <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
-                      <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
-                      <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
-                      <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
-                      <li class="products__option"><span class="option__name">Связь 2G</span><span class="option__value">Есть</span></li>
-                      <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
-                      <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
-                    </ul><span class="products_short__desc">
-                       
-                      Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
-                    <div class="products__rating">
-                      <ul class="products__rating-stars">
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star"></li>
-                      </ul><span class="product__rating-number">4</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="product__right">
-                  <div class="product__info">
-                    <div class="product__price">11 290</div>
-                  </div>
-                  <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
-                    <div class="have__in__stock__message">В наличии</div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="products__item">
-              <div class="products__item__inner">
-                <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
-                    <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
-                    </ul>
-                    <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
-                  </div>
-                  <div class="products__desc">
-                    <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
-                    <ul class="products__options">
-                      <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
-                      <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
-                      <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
-                      <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
-                      <li class="products__option"><span class="option__name">Связь 2G</span><span class="option__value">Есть</span></li>
-                      <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
-                      <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
-                    </ul><span class="products_short__desc">
-                       
-                      Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
-                    <div class="products__rating">
-                      <ul class="products__rating-stars">
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star"></li>
-                      </ul><span class="product__rating-number">4</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="product__right">
-                  <div class="product__info">
-                    <div class="product__price">11 290</div>
-                  </div>
-                  <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
-                    <div class="have__in__stock__message">В наличии</div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="products__item">
-              <div class="products__item__inner">
-                <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
-                    <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
-                    </ul>
-                    <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
-                  </div>
-                  <div class="products__desc">
-                    <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
-                    <ul class="products__options">
-                      <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
-                      <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
-                      <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
-                      <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
-                      <li class="products__option"><span class="option__name">Связь 2G</span><span class="option__value">Есть</span></li>
-                      <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
-                      <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
-                    </ul><span class="products_short__desc">
-                       
-                      Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
-                    <div class="products__rating">
-                      <ul class="products__rating-stars">
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star"></li>
-                      </ul><span class="product__rating-number">4</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="product__right">
-                  <div class="product__info">
-                    <div class="product__price">11 290</div>
-                  </div>
-                  <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
-                    <div class="have__in__stock__message">В наличии</div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="products__item">
-              <div class="products__item__inner">
-                <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
-                    <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
-                    </ul>
-                    <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
-                  </div>
-                  <div class="products__desc">
-                    <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
-                    <ul class="products__options">
-                      <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
-                      <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
-                      <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
-                      <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
-                      <li class="products__option"><span class="option__name">Связь 2G</span><span class="option__value">Есть</span></li>
-                      <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
-                      <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
-                    </ul><span class="products_short__desc">
-                       
-                      Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
-                    <div class="products__rating">
-                      <ul class="products__rating-stars">
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star"></li>
-                      </ul><span class="product__rating-number">4</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="product__right">
-                  <div class="product__info">
-                    <div class="product__price">11 290</div>
-                  </div>
-                  <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
-                    <div class="have__in__stock__message">В наличии</div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="products__item">
-              <div class="products__item__inner">
-                <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
-                    <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
-                    </ul>
-                    <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
-                  </div>
-                  <div class="products__desc">
-                    <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
-                    <ul class="products__options">
-                      <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
-                      <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
-                      <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
-                      <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
-                      <li class="products__option"><span class="option__name">Связь 2G</span><span class="option__value">Есть</span></li>
-                      <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
-                      <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
-                    </ul><span class="products_short__desc">
-                       
-                      Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
-                    <div class="products__rating">
-                      <ul class="products__rating-stars">
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star"></li>
-                      </ul><span class="product__rating-number">4</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="product__right">
-                  <div class="product__info">
-                    <div class="product__price">11 290</div>
-                  </div>
-                  <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
-                    <div class="have__in__stock__message">В наличии</div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="products__item">
-              <div class="products__item__inner">
-                <div class="products__left">
-                  <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
-                    <ul class="products__slideshow-thombs">
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
-                      <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
-                    </ul>
-                    <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
-                  </div>
-                  <div class="products__desc">
-                    <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
-                    <ul class="products__options">
-                      <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
-                      <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
-                      <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
-                      <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
-                      <li class="products__option"><span class="option__name">Связь 2G</span><span class="option__value">Есть</span></li>
-                      <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
-                      <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
-                    </ul><span class="products_short__desc">
-                       
-                      Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
-                    <div class="products__rating">
-                      <ul class="products__rating-stars">
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star-red products__rating__star"></li>
-                        <li class="products__rating__star"></li>
-                      </ul><span class="product__rating-number">4</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="product__right">
-                  <div class="product__info">
-                    <div class="product__price">11 290</div>
-                  </div>
-                  <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
-                    <div class="have__in__stock__message">В наличии</div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="pagination">
-            <ul class="page__list">
-              <li class="page__item"> <a href="#" id="page__prev" class="pagination__link"> &#60;</a></li>
-              <li class="page__item"> <a href="#" class="pagination__link">1</a></li>
-              <li class="page__item"> <a href="#" class="pagination__link">2</a></li>
-              <li class="page__item"> <a href="#" class="pagination__link">3</a></li>
-              <li class="page__item"> <a href="#" id="page__next" class="pagination__link">&#62;</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="container">					
-        <div class="info__block">
-          <h2 class="main__title">Важная информация</h2>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>cooltech</title>
+    <link rel="stylesheet" href="_css/main.css"/>
+  </head>
+  <body> 
+    <div class="wrap">
+      <header class="header">
+        <div class="header__top">
           <div class="container">
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iure minima aspernatur veritatis expedita tempora aperiam eos modi ratione. Earum nisi dolores ex, deleniti assumenda libero minima quas unde perspiciatis!</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iure minima aspernatur veritatis expedita tempora aperiam eos modi ratione. Earum nisi dolores ex, deleniti assumenda libero minima quas unde perspiciatis!</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iure minima aspernatur veritatis expedita tempora aperiam eos modi ratione. Earum nisi dolores ex, deleniti assumenda libero minima quas unde perspiciatis!</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iure minima aspernatur veritatis expedita tempora aperiam eos modi ratione. Earum nisi dolores ex, deleniti assumenda libero minima quas unde perspiciatis!</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iure minima aspernatur veritatis expedita tempora aperiam eos modi ratione. Earum nisi dolores ex, deleniti assumenda libero minima quas unde perspiciatis!</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iure minima aspernatur veritatis expedita tempora aperiam eos modi ratione. Earum nisi dolores ex, deleniti assumenda libero minima quas unde perspiciatis!</p>
-          </div>
-        </div>
-      </div>
-      <footer class="footer">
-        <div class="footer__top">
-          <div class="container">
-            <div class="footer__top__left"><a href="#" class="logo logo__footer"><img src="img/white-logo.png" alt="COOLTECH logo" class="logo__img"/></a></div>
-            <div class="footer__top__right">
-              <div class="socials footer__socials">
+            <div class="header-left">
+              <div class="socials header-socials">
                 <ul class="socials__list">
-                  <li class="socials__item socials__item__vk"><a href="#" target="_blank" class="social__link">vk</a></li>
-                  <li class="socials__item socials__item__fb"><a href="#" target="_blank" class="social__link">fb</a></li>
-                  <li class="socials__item socials__item__tw"><a href="#" target="_blank" class="social__link">tw</a></li>
+                  <li class="socials__item socials__item__fb"><a href="#" target="_blank" class="social__link">
+                      <div class="social_icon"></div></a></li>
+                  <li class="socials__item socials__item__vk"><a href="#" target="_blank" class="social__link">
+                      <div class="social_icon"></div></a></li>
+                  <li class="socials__item socials__item__tw"><a href="#" target="_blank" class="social__link">
+                      <div class="social_icon"></div></a></li>
                 </ul>
               </div>
-              <nav class="nav footer__nav">
-                <div class="container">
-                  <ul class="nav__list">
-                    <li class="  nav__item"> <a href="#" class="nav__link">Плашнеты</a></li>
-                    <li class="active nav__item"> <a href="#" class="nav__link">Мобильние телефоны</a></li>
-                    <li class="  nav__item"> <a href="#" class="nav__link">Mp3 плееры</a></li>
-                    <li class="  nav__item"> <a href="#" class="nav__link">Персональние компьютеры</a></li>
-                    <li class="  nav__item"> <a href="#" class="nav__link">Ноутбуки</a></li>
-                    <li class="  nav__item"> <a href="#" class="nav__link">Аксессуары</a></li>
-                    <li class="  nav__item"> <a href="#" class="nav__link">Бытовая техника</a></li>
-                  </ul>
-                </div>
-              </nav>
+            </div>
+            <div class="header-right">
+              <div class="contacts"><span class="contacts__adres">ул. Маяковская 6, офис 17</span><a href="tel:#" class="contacts__telephone">+7 (921) 123-12-13</a></div>
             </div>
           </div>
         </div>
-        <div class="footer__bottom">
-          <div class="container"><span>All rights reserved. 2015. no copy alowed</span></div>
+        <div class="header__bottom">
+          <div class="container"><a href="#main" class="logo"><img src="img/logo.png" alt="cooltech logo" class="logo__img"/></a>
+            <div class="search">
+              <form class="search__form">
+                <input type="text" id="search_input" placeholder="Что будем искать" class="search__input"/>
+                <input type="submit" value="Найти" class="search__submit"/>
+              </form>
+            </div>
+            <div class="menu">
+              <ul class="menu__list">
+                <li class="menu__list__item"> <a href="#" class="menu_link">Карта проезда</a></li>
+                <li class="menu__list__item"> <a href="#" class="menu_link">История заказов</a></li>
+                <li class="menu__list__item"> <a href="#" class="menu_link">Корзина</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </footer>
-    </main>
-  </div>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.columnizer.min.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+        <nav class="nav">
+          <div class="container">
+            <ul class="nav__list">
+              <li class="  nav__item"> <a href="#" class="nav__link">Плашнеты</a></li>
+              <li class="nav__item__active nav__item"> <a href="#" class="nav__link">Мобильние телефоны</a></li>
+              <li class="  nav__item"> <a href="#" class="nav__link">Mp3 плееры</a></li>
+              <li class="  nav__item"> <a href="#" class="nav__link">Персональние компьютеры</a></li>
+              <li class="  nav__item"> <a href="#" class="nav__link">Ноутбуки</a></li>
+              <li class="  nav__item"> <a href="#" class="nav__link">Аксессуары</a></li>
+              <li class="  nav__item"> <a href="#" class="nav__link">Бытовая техника</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"> <a href="#" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"> <a href="#" class="breadcrumbs__link">Каталог</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main class="page-content">
+        <div class="container">
+          <h2 class="main__title">Мобильные телефоны</h2>
+          <aside class="sidebar">
+            <div class="sidebar__section categories">
+              <ul class="categories__list">
+                <li class="categories__item"><a href="#" class="categoriies__link">Флагманы</a></li>
+                <li class="categories__item"><a href="#" class="active categoriies__link">Бюджетная линейка</a></li>
+              </ul>
+            </div>
+            <div class="sidebar__section filter">
+              <ul class="filter__list">
+                <li class="filter__item"><a href="#" class="filter__item__title">Наличие в магазинах</a>
+                  <div class="filter__item__body">
+                    <ul class="filter__sublist">
+                      <li class="sublist__item">
+                        <label class="filter__label radio__label">
+                          <input type="radio" name="have_in_shop" checked="checked"/><span>во всех магазинах</span>
+                        </label>
+                      </li>
+                      <li class="sublist__item">
+                        <label class="filter__label radio__label">
+                          <input type="radio" name="have_in_shop"/><span>В ближайшем ко мне магазине</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="filter__item"><a href="#" class="filter__item__title">Бренды</a>
+                  <div class="filter__item__body">
+                    <ul class="filter__sublist">
+                      <li class="sublist__item">
+                        <label class="filter__label checkbox__label">
+                          <input type="checkbox" name="Lenovo"/><span>Lenovo</span>
+                        </label>
+                      </li>
+                      <li class="sublist__item">
+                        <label class="filter__label checkbox__label">
+                          <input type="checkbox" name="Apple"/><span>Apple</span>
+                        </label>
+                      </li>
+                      <li class="sublist__item">
+                        <label class="filter__label checkbox__label">
+                          <input type="checkbox" name="Samsung"/><span>Samsung</span>
+                        </label>
+                      </li>
+                      <li class="sublist__item">
+                        <label class="filter__label checkbox__label">
+                          <input type="checkbox" name="Asus"/><span>Asus</span>
+                        </label>
+                      </li>
+                      <li class="sublist__item">
+                        <label class="filter__label checkbox__label">
+                          <input type="checkbox" name="Motorola"/><span>Motorola</span>
+                        </label>
+                      </li>
+                    </ul><a href="#" class="reset">Сбросить фильтр</a>
+                  </div>
+                </li>
+                <li class="filter__item"><a href="#" class="filter__item__title">Цена</a>
+                  <div class="filter__item__body">
+                    <label class="cost__label">от    
+                      <input type="text" class="for"/>
+                    </label>
+                    <label class="cost__label">до   
+                      <input type="text" class="to"/>
+                    </label>
+                  </div>
+                  <div data-min="500" data-max="5000" class="cost__slider"></div>
+                </li>
+                <li class="filter__item"><a href="#" class="filter__item__title">Цвет</a>
+                  <div class="filter__item__body">
+                    <ul class="filter__sublist filter__color__list">
+                      <li class="color__item sublist__item">
+                        <label class="color__label">
+                          <input type="checkbox" name="color" value="ffffff"/><span style="background:#ffffff;" class="color__pic"></span>
+                        </label>
+                      </li>
+                      <li class="color__item sublist__item">
+                        <label class="color__label">
+                          <input type="checkbox" name="color" value="cccccc"/><span style="background:#cccccc;" class="color__pic"></span>
+                        </label>
+                      </li>
+                      <li class="color__item sublist__item">
+                        <label class="color__label">
+                          <input type="checkbox" name="color" value="000000"/><span style="background:#000000;" class="color__pic"></span>
+                        </label>
+                      </li>
+                      <li class="color__item sublist__item">
+                        <label class="color__label">
+                          <input type="checkbox" name="color" value="0a3153"/><span style="background:#0a3153;" class="color__pic"></span>
+                        </label>
+                      </li>
+                      <li class="color__item sublist__item">
+                        <label class="color__label">
+                          <input type="checkbox" name="color" value="ff1800"/><span style="background:#ff1800;" class="color__pic"></span>
+                        </label>
+                      </li>
+                      <li class="color__item sublist__item">
+                        <label class="color__label">
+                          <input type="checkbox" name="color" value="fff343"/><span style="background:#fff343;" class="color__pic"></span>
+                        </label>
+                      </li>
+                      <li class="color__item sublist__item">
+                        <label class="color__label">
+                          <input type="checkbox" name="color" value="fb914a"/><span style="background:#fb914a;" class="color__pic"></span>
+                        </label>
+                      </li>
+                      <li class="color__item sublist__item">
+                        <label class="color__label">
+                          <input type="checkbox" name="color" value="92c37c"/><span style="background:#92c37c;" class="color__pic"></span>
+                        </label>
+                      </li>
+                      <li class="color__item sublist__item">
+                        <label class="color__label">
+                          <input type="checkbox" name="color" value="40a6ff"/><span style="background:#40a6ff;" class="color__pic"></span>
+                        </label>
+                      </li>
+                      <li class="color__item sublist__item">
+                        <label class="color__label">
+                          <input type="checkbox" name="color" value="9870ad"/><span style="background:#9870ad;" class="color__pic"></span>
+                        </label>
+                      </li>
+                      <li class="color__item sublist__item">
+                        <label class="color__label">
+                          <input type="checkbox" name="color" value="dc78ad"/><span style="background:#dc78ad;" class="color__pic"></span>
+                        </label>
+                      </li>
+                      <li class="color__item sublist__item">
+                        <label class="color__label">
+                          <input type="checkbox" name="color" value="7f401d"/><span style="background:#7f401d;" class="color__pic"></span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="filter__item"><a href="#" class="filter__item__title">Операционные системы</a>
+                  <div class="filter__item__body">
+                    <ul class="filter__sublist">
+                      <li class="sublist__item">
+                        <label class="filter__label checkbox__label">
+                          <input type="checkbox" name="Android"/><span>Android</span>
+                        </label>
+                      </li>
+                      <li class="sublist__item">
+                        <label class="filter__label checkbox__label">
+                          <input type="checkbox" name="iOS"/><span>iOS</span>
+                        </label>
+                      </li>
+                      <li class="sublist__item">
+                        <label class="filter__label checkbox__label">
+                          <input type="checkbox" name="Windows Mobile"/><span>Windows Mobile</span>
+                        </label>
+                      </li>
+                      <li class="sublist__item">
+                        <label class="filter__label checkbox__label">
+                          <input type="checkbox" name="Symbian"/><span>Symbian</span>
+                        </label>
+                      </li>
+                      <li class="sublist__item">
+                        <label class="filter__label checkbox__label">
+                          <input type="checkbox" name="custom"/><span>custom</span>
+                        </label>
+                      </li>
+                    </ul><a href="#" class="reset">Сбросить фильтр</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <div class="products__block">
+            <div class="products__block__header">
+              <div class="header__left"><span>Сортировать по</span>
+                <div class="sort-by__layout"> <span>по цене</span>
+                  <ul class="sort-by__list">
+                    <li class="sort-by__item">по цене</li>
+                    <li class="sort-by__item">по популярности</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header__right"><span class="layout__titile">Вид каталога</span>
+                <ul class="layout__list closed">
+                  <li class="layout__item"><a href="#" data-layout="list__big" id="list__big" class="layout__button list__big-btn ">list__big</a></li>
+                  <li class="layout__item"><a href="#" data-layout="tile" id="tile" class="layout__button tile-btn layout__button__active">tile</a></li>
+                  <li class="layout__item"><a href="#" data-layout="list__small" id="list__small" class="layout__button list__small-btn ">list__small</a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="products__list tile">
+              <li class="products__item">
+                <div class="products__item__inner">
+                  <div class="products__left">
+                    <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
+                      <ul class="products__slideshow-thombs">
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
+                      </ul>
+                      <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
+                    </div>
+                    <div class="products__desc">
+                      <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
+                      <ul class="products__options">
+                        <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
+                        <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
+                        <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
+                        <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
+                        <li class="products__option"><span class="option__name">Связь 3G</span><span class="option__value">Есть</span></li>
+                        <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
+                        <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
+                      </ul><span class="products_short__desc">
+                         
+                        Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
+                      <div class="products__rating">
+                        <ul class="products__rating-stars">
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star"></li>
+                        </ul><span class="product__rating-number">4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__right">
+                    <div class="product__info">
+                      <div class="product__price">11 290</div>
+                    </div>
+                    <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
+                      <div class="have__in__stock__message">В наличии</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__item__inner">
+                  <div class="products__left">
+                    <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
+                      <ul class="products__slideshow-thombs">
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
+                      </ul>
+                      <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
+                    </div>
+                    <div class="products__desc">
+                      <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
+                      <ul class="products__options">
+                        <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
+                        <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
+                        <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
+                        <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
+                        <li class="products__option"><span class="option__name">Связь 3G</span><span class="option__value">Есть</span></li>
+                        <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
+                        <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
+                      </ul><span class="products_short__desc">
+                         
+                        Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
+                      <div class="products__rating">
+                        <ul class="products__rating-stars">
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star"></li>
+                        </ul><span class="product__rating-number">4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__right">
+                    <div class="product__info">
+                      <div class="product__price">11 290</div>
+                    </div>
+                    <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
+                      <div class="have__in__stock__message">В наличии</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__item__inner">
+                  <div class="products__left">
+                    <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
+                      <ul class="products__slideshow-thombs">
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
+                      </ul>
+                      <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
+                    </div>
+                    <div class="products__desc">
+                      <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
+                      <ul class="products__options">
+                        <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
+                        <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
+                        <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
+                        <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
+                        <li class="products__option"><span class="option__name">Связь 3G</span><span class="option__value">Есть</span></li>
+                        <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
+                        <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
+                      </ul><span class="products_short__desc">
+                         
+                        Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
+                      <div class="products__rating">
+                        <ul class="products__rating-stars">
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star"></li>
+                        </ul><span class="product__rating-number">4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__right">
+                    <div class="product__info">
+                      <div class="product__price">11 290</div>
+                    </div>
+                    <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
+                      <div class="have__in__stock__message">В наличии</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__item__inner">
+                  <div class="products__left">
+                    <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
+                      <ul class="products__slideshow-thombs">
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
+                      </ul>
+                      <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
+                    </div>
+                    <div class="products__desc">
+                      <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
+                      <ul class="products__options">
+                        <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
+                        <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
+                        <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
+                        <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
+                        <li class="products__option"><span class="option__name">Связь 3G</span><span class="option__value">Есть</span></li>
+                        <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
+                        <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
+                      </ul><span class="products_short__desc">
+                         
+                        Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
+                      <div class="products__rating">
+                        <ul class="products__rating-stars">
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star"></li>
+                        </ul><span class="product__rating-number">4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__right">
+                    <div class="product__info">
+                      <div class="product__price">11 290</div>
+                    </div>
+                    <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
+                      <div class="have__in__stock__message">В наличии</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__item__inner">
+                  <div class="products__left">
+                    <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
+                      <ul class="products__slideshow-thombs">
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
+                      </ul>
+                      <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
+                    </div>
+                    <div class="products__desc">
+                      <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
+                      <ul class="products__options">
+                        <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
+                        <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
+                        <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
+                        <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
+                        <li class="products__option"><span class="option__name">Связь 3G</span><span class="option__value">Есть</span></li>
+                        <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
+                        <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
+                      </ul><span class="products_short__desc">
+                         
+                        Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
+                      <div class="products__rating">
+                        <ul class="products__rating-stars">
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star"></li>
+                        </ul><span class="product__rating-number">4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__right">
+                    <div class="product__info">
+                      <div class="product__price">11 290</div>
+                    </div>
+                    <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
+                      <div class="have__in__stock__message">В наличии</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__item__inner">
+                  <div class="products__left">
+                    <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
+                      <ul class="products__slideshow-thombs">
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
+                      </ul>
+                      <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
+                    </div>
+                    <div class="products__desc">
+                      <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
+                      <ul class="products__options">
+                        <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
+                        <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
+                        <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
+                        <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
+                        <li class="products__option"><span class="option__name">Связь 3G</span><span class="option__value">Есть</span></li>
+                        <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
+                        <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
+                      </ul><span class="products_short__desc">
+                         
+                        Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
+                      <div class="products__rating">
+                        <ul class="products__rating-stars">
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star"></li>
+                        </ul><span class="product__rating-number">4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__right">
+                    <div class="product__info">
+                      <div class="product__price">11 290</div>
+                    </div>
+                    <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
+                      <div class="have__in__stock__message">В наличии</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__item__inner">
+                  <div class="products__left">
+                    <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
+                      <ul class="products__slideshow-thombs">
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
+                      </ul>
+                      <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
+                    </div>
+                    <div class="products__desc">
+                      <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
+                      <ul class="products__options">
+                        <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
+                        <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
+                        <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
+                        <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
+                        <li class="products__option"><span class="option__name">Связь 3G</span><span class="option__value">Есть</span></li>
+                        <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
+                        <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
+                      </ul><span class="products_short__desc">
+                         
+                        Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
+                      <div class="products__rating">
+                        <ul class="products__rating-stars">
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star"></li>
+                        </ul><span class="product__rating-number">4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__right">
+                    <div class="product__info">
+                      <div class="product__price">11 290</div>
+                    </div>
+                    <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
+                      <div class="have__in__stock__message">В наличии</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__item__inner">
+                  <div class="products__left">
+                    <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
+                      <ul class="products__slideshow-thombs">
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
+                      </ul>
+                      <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
+                    </div>
+                    <div class="products__desc">
+                      <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
+                      <ul class="products__options">
+                        <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
+                        <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
+                        <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
+                        <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
+                        <li class="products__option"><span class="option__name">Связь 3G</span><span class="option__value">Есть</span></li>
+                        <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
+                        <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
+                      </ul><span class="products_short__desc">
+                         
+                        Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
+                      <div class="products__rating">
+                        <ul class="products__rating-stars">
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star"></li>
+                        </ul><span class="product__rating-number">4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__right">
+                    <div class="product__info">
+                      <div class="product__price">11 290</div>
+                    </div>
+                    <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
+                      <div class="have__in__stock__message">В наличии</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__item__inner">
+                  <div class="products__left">
+                    <div class="products__slideshow"><a href="#" class="products__slideshow-display"><img src="img/samsung1.png" alt="product foto" class="prouducts__big-photo"/></a>
+                      <ul class="products__slideshow-thombs">
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung1.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung2.png" alt="small pick"/></a></li>
+                        <li class="products_slideshow-item"><a href="#" class="products_slideshow-item__inner"><img src="img/samsung3.png" alt="small pick"/></a></li>
+                      </ul>
+                      <div class="products__article"><span class="products__article__word">Артикул</span><span class="products__article__code">123456</span></div>
+                    </div>
+                    <div class="products__desc">
+                      <div class="products__desc-title">Samsung GT-I9301I GALAXY S 3</div>
+                      <ul class="products__options">
+                        <li class="products__option"><span class="option__name">Тип SIM-карты</span><span class="option__value">Micro-SIM</span></li>
+                        <li class="products__option"><span class="option__name">Количество SIM-карт</span><span class="option__value">1</span></li>
+                        <li class="products__option"><span class="option__name">Цвет</span><span class="option__value">Белый</span></li>
+                        <li class="products__option"><span class="option__name">ОС</span><span class="option__value">Android</span></li>
+                        <li class="products__option"><span class="option__name">Связь 3G</span><span class="option__value">Есть</span></li>
+                        <li class="products__option"><span class="option__name">4G(LTE)</span><span class="option__value">Нет</span></li>
+                        <li class="products__option"><span class="option__name">GPS-модуль</span><span class="option__value">Есть</span></li>
+                      </ul><span class="products_short__desc">
+                         
+                        Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </span>
+                      <div class="products__rating">
+                        <ul class="products__rating-stars">
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star-red products__rating__star"></li>
+                          <li class="products__rating__star"></li>
+                        </ul><span class="product__rating-number">4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__right">
+                    <div class="product__info">
+                      <div class="product__price">11 290</div>
+                    </div>
+                    <div class="product__right__buttom"><a href="#" class="product__buy-button">В корзину</a>
+                      <div class="have__in__stock__message">В наличии</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="pagination">
+              <ul class="page__list">
+                <li class="page__item"> <a href="#" id="page__prev" class="pagination__link"> &#60;</a></li>
+                <li class="page__item"> <a href="#" class="pagination__link">1</a></li>
+                <li class="page__item"> <a href="#" class="pagination__link">2</a></li>
+                <li class="page__item"> <a href="#" class="pagination__link">3</a></li>
+                <li class="page__item"> <a href="#" id="page__next" class="pagination__link">&#62;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">					
+          <div class="info__block">
+            <h2 class="main__title">Важная информация</h2>
+            <div class="container">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iure minima aspernatur veritatis expedita tempora aperiam eos modi ratione. Earum nisi dolores ex, deleniti assumenda libero minima quas unde perspiciatis!</p>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iure minima aspernatur veritatis expedita tempora aperiam eos modi ratione. Earum nisi dolores ex, deleniti assumenda libero minima quas unde perspiciatis!</p>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iure minima aspernatur veritatis expedita tempora aperiam eos modi ratione. Earum nisi dolores ex, deleniti assumenda libero minima quas unde perspiciatis!</p>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iure minima aspernatur veritatis expedita tempora aperiam eos modi ratione. Earum nisi dolores ex, deleniti assumenda libero minima quas unde perspiciatis!</p>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iure minima aspernatur veritatis expedita tempora aperiam eos modi ratione. Earum nisi dolores ex, deleniti assumenda libero minima quas unde perspiciatis!</p>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod iure minima aspernatur veritatis expedita tempora aperiam eos modi ratione. Earum nisi dolores ex, deleniti assumenda libero minima quas unde perspiciatis!</p>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer__top">
+            <div class="container">
+              <div class="footer__top__left"><a href="#" class="logo logo__footer"><img src="img/white-logo.png" alt="COOLTECH logo" class="logo__img"/></a></div>
+              <div class="footer__top__right">
+                <div class="socials footer__socials">
+                  <ul class="socials__list">
+                    <li class="socials__item socials__item__vk"><a href="#" target="_blank" class="social__link">vk</a></li>
+                    <li class="socials__item socials__item__fb"><a href="#" target="_blank" class="social__link">fb</a></li>
+                    <li class="socials__item socials__item__tw"><a href="#" target="_blank" class="social__link">tw</a></li>
+                  </ul>
+                </div>
+                <nav class="nav footer__nav">
+                  <div class="container">
+                    <ul class="nav__list">
+                      <li class="  nav__item"> <a href="#" class="nav__link">Плашнеты</a></li>
+                      <li class="active nav__item"> <a href="#" class="nav__link">Мобильние телефоны</a></li>
+                      <li class="  nav__item"> <a href="#" class="nav__link">Mp3 плееры</a></li>
+                      <li class="  nav__item"> <a href="#" class="nav__link">Персональние компьютеры</a></li>
+                      <li class="  nav__item"> <a href="#" class="nav__link">Ноутбуки</a></li>
+                      <li class="  nav__item"> <a href="#" class="nav__link">Аксессуары</a></li>
+                      <li class="  nav__item"> <a href="#" class="nav__link">Бытовая техника</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="container"><span>All rights reserved. 2015. no copy alowed</span></div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.columnizer.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

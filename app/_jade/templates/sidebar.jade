@@ -1,11 +1,11 @@
 aside.sidebar
-	section.sidebar__section.categories
+	.sidebar__section.categories
 		- var list = ['Флагманы','Бюджетная линейка']
 		ul.categories__list
 			each li in list 
 				li.categories__item
 					a(href="#" class=""+ ((li === 'Бюджетная линейка')? "active":"")).categoriies__link #{li}
-	section.sidebar__section.filter
+	.sidebar__section.filter
 		ul.filter__list
 
 			li.filter__item
@@ -56,7 +56,7 @@ aside.sidebar
 							li.color__item.sublist__item
 								label.color__label
 									input(type="checkbox" name="color" value="#{color}")
-									div(style="background:##{color};").color__pic
+									span(style="background:##{color};").color__pic
 
 			li.filter__item
 				a(href="#").filter__item__title Операционные системы
@@ -68,4 +68,4 @@ aside.sidebar
 								label.filter__label.checkbox__label
 									input(type="checkbox" name="#{os}")
 									span #{os}
-						a(href="#").reset Сбросить фильтр
+					a(href="#").reset Сбросить фильтр
